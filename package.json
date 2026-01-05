@@ -47,11 +47,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/AlenaRudenko/git-practice"
+    "url": "https://github.com/AlenaRudenko/node-xgapemai"
   },
   "bugs": {
-    "url": "https://github.com/AlenaRudenko/git-practice"
+    "url": "https://github.com/AlenaRudenko/node-xgapemai"
   },
-  "homepage": "https://github.com/AlenaRudenko/git-practice#readme",
+  "homepage": "https://github.com/AlenaRudenko/node-xgapemaie#readme",
   "files": ["README.md"]
 }
