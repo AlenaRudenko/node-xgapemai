@@ -1,0 +1,57 @@
+{
+  "name": "node-practice",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "keywords": ["package", "practice", "js"],
+  "config": {
+    "port": 3000
+  },
+  "description": "Образовательный проект для освоения Node.js и работы с package.json",
+  "scripts": {
+    "dev": "concurrently \"npm run lint\" \"node --watch index.js\"",
+    "prestart": "node check-env.js && npm run lint",
+    "precommit": "npm run format && npm run lint",
+    "start": "node index.js",
+    "check": "npm run lint && npm run test",
+    "test": "jest",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "debug": "node --inspect index.js",
+    "lint:fix": "eslint . --fix",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "*.js": ["eslint --fix", "prettier --write"],
+    "*.{json,md}": ["prettier --write"]
+  },
+  "module": "index.js",
+  "author": "Alena Ignatova",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^9.2.1",
+    "cross-env": "^10.1.0",
+    "eslint": "^9.39.1",
+    "eslint-config-prettier": "^10.1.8",
+    "globals": "^16.5.0",
+    "husky": "^9.1.7",
+    "jest": "^30.2.0",
+    "lint-staged": "^16.2.7",
+    "lodash": "^4.17.20",
+    "nodemon": "^3.1.10",
+    "prettier": "^3.6.2"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AlenaRudenko/git-practice"
+  },
+  "bugs": {
+    "url": "https://github.com/AlenaRudenko/git-practice"
+  },
+  "homepage": "https://github.com/AlenaRudenko/git-practice#readme",
+  "files": ["README.md"]
+}
