@@ -10,7 +10,7 @@ const users = [
     workflow: ["java", "ruby"],
   },
   {
-    id: 2,
+    id: 2,,
     active: false,
     name: "Лариса",
     age: 20,
